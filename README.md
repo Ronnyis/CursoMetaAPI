@@ -1,9 +1,1 @@
-# CURSO_APIMETAPYTHON
-# CURSO_APIMETAPYTHON
-# CursoMetaAPI
-# CursoMetaAPI
-# CursoMetaAPI
-# CursoMetaAPI
-# cursoMeta
-# CursoMetaAPI
 # CursoMetaAPI
