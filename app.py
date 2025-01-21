@@ -4,6 +4,7 @@ from datetime import datetime
 import http.client
 import json
 
+
 app = Flask(__name__)
 
 #Configuracion de la base de datos SQLITE
