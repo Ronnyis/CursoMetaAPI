@@ -365,12 +365,12 @@ def enviar_mensajes_whatsapp(texto,number):
             }
         }
 
-    #Convertir el diccionaria a formato JSON ###
+    #Convertir el diccionaria a formato JSON
     data=json.dumps(data)
 
     headers = {
         "Content-Type" : "application/json",
-        "Authorization" : "EAATBEDmeu0sBO1wV86hzUZBZAJ3IjKQ1xdMVNgHZAa2yPcuXGrEd6CJRfCZBF1YF8juBZApZAamPhqqqCXNZA9UJttZAm4Tm0S9Srci4TIXjVTC92FYMWZCDGrML1M6igJ6UDbsyFf1BnKee0pnujo55SmZCaICVFx5KbUUDxbTncmXiAmu5cG4dvkVrETLQip8mW9855zZB4jUweZASsXOZCl2XFfbcAgVdz"
+        "Authorization" : "Bearer EAATBEDmeu0sBO91pN19CAlZB9B0qhV5saBaMlB3jglDG62uxZCIdFVwvBy3KgJ9EW8Xf46AcPNjwbZAQ3ZA6athXAZAZCQ2ZAbHZBUZBHlFS3IRgmdZCBs6xipLx8EQd3QNUwcQhf3pS8jdRl5iBuCKRUZB5z73r2T5cnzuHhU1Lbe7UUESTjEVgcUvzWVAd4ZC1BZAUFkUvF0pb52s6RVfw7WghcesyypzwZD"
     }
 
     connection = http.client.HTTPSConnection("graph.facebook.com")
