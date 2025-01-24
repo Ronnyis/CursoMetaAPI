@@ -143,10 +143,10 @@ def enviar_mensajes_whatsapp(texto,number):
             "to": number,
             "type": "location",
             "location": {
-                "latitude": "-12.067158831865067",
-                "longitude": "-77.03377940839486",
-                "name": "Estadio Nacional del Perú",
-                "address": "Cercado de Lima"
+                "latitude": "-0.17078498559904817",
+                "longitude": "-78.50070310859603",
+                "name": "Broker Pazmiño Seguros",
+                "address": "Torre Tungurahua, Urbanización Colinas del Pichincha, Quito 170527"
             }
         }
     elif "3" in texto:
@@ -209,7 +209,7 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "🚀 Hola, visita mi web anderson-bastidas.com para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información del Curso. ❔\n2️⃣. Ubicación del local. 📍\n3️⃣. Enviar temario en PDF. 📄\n4️⃣. Audio explicando curso. 🎧\n5️⃣. Video de Introducción. ⏯️\n6️⃣. Hablar con AnderCode. 🙋‍♂️\n7️⃣. Horario de Atención. 🕜 \n0️⃣. Regresar al Menú. 🕜"
+                "body": "🚀 Hola, visita mi web https://pazminojativa.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información del Curso. ❔\n2️⃣. Ubicación del local. 📍\n3️⃣. Enviar temario en PDF. 📄\n4️⃣. Audio explicando curso. 🎧\n5️⃣. Video de Introducción. ⏯️\n6️⃣. Hablar con AnderCode. 🙋‍♂️\n7️⃣. Horario de Atención. 🕜 \n0️⃣. Regresar al Menú. 🕜"
             }
         }
     elif "boton" in texto:
@@ -372,7 +372,7 @@ def enviar_mensajes_whatsapp(texto,number):
 
     headers = {
         "Content-Type" : "application/json",
-        "Authorization" : "Bearer EAATBEDmeu0sBO8KKjIjUJtZAZBGSQFCOWwjbif8Q1AMPnGHBCI7lBA8Y95JAySTrGzq6vqYgfjVQnxM0HZBtjbFawbI3V8Acn7uhqtELCd9SYftf3BAbmTvQpoLBCk9ZAsmmR9ZAR583FPFmyRRf7ZC42pacRL2QZCKCCSiGeZC8ZA7e0UFyTPFaakMudesALVweZB5ZCf84KR0EtFoE3wjz5TR1s04P0AZD"
+        "Authorization" : "Bearer EAATBEDmeu0sBO8vdxv2LJKiYNQxtAGlD5GiDQugzJAmYrEkU4XJEMWe9qSYZBsLjStfKiZB5MAOJAJ5PgZATVEjbetfTt5V5MhdKFIgL6NKI7rSAIZBxmf1goJRFFAC35b5nvnYf3xcltflXLfDdUMsPeNSpdeObmlxQxuGRt69zulTQvZASLpQN8KfUXzxfPydIfILy7liuZCGELn0W1ZBXY5toA0ZD"
     }
 
     connection = http.client.HTTPSConnection("graph.facebook.com")
