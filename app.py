@@ -121,7 +121,7 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "🚀 Hola, ¿Cómo estás? Bienvenido."
+                "body": "🚀 Hola, ¿Cómo estás? Bienvenido a BROKER PAZMIÑO JATIVA SEGUROS."
             }
         }
     elif "1" in texto:
@@ -132,7 +132,9 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "body": "Generamos modelos de negocio innovadores y diseñamos herramientas tecnológicas disruptivas que generen ventajas competitivas en favor de nuestros clientes."
+                "\nEn Pazmiño Játiva Seguros nuestro propósito es ¡Desafiar lo establecido Somos el Puente de Oro en la transformación digital de nuestros clientes."
+                "\nAprovechamos la sinergia que conforma nuestro grupo y socios estratégicos, combinando recursos, conocimientos y experiencia para un servicio innovador y personalizado."
             }
         }
     elif "2" in texto:
@@ -174,7 +176,7 @@ def enviar_mensajes_whatsapp(texto,number):
             "to": number,
             "text": {
                 "preview_url": True,
-                "body": "Introduccion al curso! https://youtu.be/6ULOE2tGlBM"
+                "body": "Introduccion al curso! https://pazminojativa.com/wp-content/uploads/2023/09/video.mp4"
             }
         }
     elif "6" in texto:
@@ -370,7 +372,7 @@ def enviar_mensajes_whatsapp(texto,number):
 
     headers = {
         "Content-Type" : "application/json",
-        "Authorization" : "Bearer EAATBEDmeu0sBOZBVdUMCElzAbnms9k6pBPQKvXJCRMs9uUCvJquMPuy7oeHarn06XtWfFTnO8JbOD0qoOh6JiTRf5zzefXdst2UjkYZAqdWefLGgjIQyKtWZA38RZABVQ8xmyU7oAcZB4HdQ0fk6RiEXkqhde4yTpu0b2RSYi2ZCZCzfJ1UiPuMPNMdwgQ6tiRkLndt2XZB8ZAwILP1SpiYZBqZCataXWoZD"
+        "Authorization" : "Bearer EAATBEDmeu0sBO8KKjIjUJtZAZBGSQFCOWwjbif8Q1AMPnGHBCI7lBA8Y95JAySTrGzq6vqYgfjVQnxM0HZBtjbFawbI3V8Acn7uhqtELCd9SYftf3BAbmTvQpoLBCk9ZAsmmR9ZAR583FPFmyRRf7ZC42pacRL2QZCKCCSiGeZC8ZA7e0UFyTPFaakMudesALVweZB5ZCf84KR0EtFoE3wjz5TR1s04P0AZD"
     }
 
     connection = http.client.HTTPSConnection("graph.facebook.com")
