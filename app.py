@@ -154,35 +154,35 @@ def enviar_mensajes_whatsapp(texto,number):
             }
         }
     elif "3" in texto:
-        data={
-            "messaging_product": "whatsapp",
-            "recipient_type": "individual",
-            "to": number,
-            "type": "document",
-            "document": {
-                    "link": "https://www.turnerlibros.com/wp-content/uploads/2021/02/ejemplo.pdf",
-                    "caption": "Temario del Curso #001"
-                }
-            }
-    elif "4" in texto:
-        data={
-            "messaging_product": "whatsapp",
-            "recipient_type": "individual",
-            "to": number,
-            "type": "audio",
-            "audio": {
-                "link": "https://filesamples.com/samples/audio/mp3/sample1.mp3"
-            }
-        }
-    elif "5" in texto:
         data = {
             "messaging_product": "whatsapp",
+            "recipient_type": "individual",
             "to": number,
+            "type": "text",
             "text": {
-                "preview_url": True,
-                "body": "Introduccion al curso! https://pazminojativa.com/wp-content/uploads/2023/09/video.mp4"
+                "preview_url": False,
+                "body": "un asesor se pondra en contacto contigo muy pronto"
             }
         }
+    # elif "4" in texto:
+    #     data={
+    #         "messaging_product": "whatsapp",
+    #         "recipient_type": "individual",
+    #         "to": number,
+    #         "type": "audio",
+    #         "audio": {
+    #             "link": "https://filesamples.com/samples/audio/mp3/sample1.mp3"
+    #         }
+    #     }
+    # elif "5" in texto:
+    #     data = {
+    #         "messaging_product": "whatsapp",
+    #         "to": number,
+    #         "text": {
+    #             "preview_url": True,
+    #             "body": "Introduccion al curso! https://pazminojativa.com/wp-content/uploads/2023/09/video.mp4"
+    #         }
+    #     }
     elif "lista" in texto:#6
         data = {
             "messaging_product": "whatsapp",
@@ -213,7 +213,7 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "🚀 Hola, visita mi pagina https://fondocesantiaepmaps.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información sobre el Fondo de cesantía EPMAPS. ❔\n2️⃣. Ubicación de la EPMAPS. 📍\n3️⃣. Enviar informacion en PDF. 📄\n4️⃣. Audio explicando. 🎧\n5️⃣. Video de Introductivo. ⏯️\n6️⃣. Hablar con un asesor. 🙋‍♂️\n7️⃣. Horario de Atención. 🕜 \n0️⃣. Regresar al Menú. 🕜"
+                "body": "🚀 Hola, visita mi pagina https://fondocesantiaepmaps.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información sobre el Fondo de cesantía EPMAPS. ❔\n2️⃣. Ubicación de la EPMAPS. 📍\n3️⃣.Hablar con un asesor. 🙋‍♂️\n4️⃣. Horario de Atención. \n5️⃣. Servicios\n0️⃣. Regresar al Menú. 🕜"
             }
 
         }
@@ -289,7 +289,7 @@ def enviar_mensajes_whatsapp(texto,number):
                 "body": "Estare a la espera."
             }
         }
-    elif "6" in texto:##lista
+    elif "5" in texto:##lista
         data ={
             "messaging_product": "whatsapp",
             "to": number,
@@ -297,13 +297,13 @@ def enviar_mensajes_whatsapp(texto,number):
             "interactive":{
                 "type" : "list",
                 "body": {
-                    "text": "Selecciona Alguna Opción"
+                    "text": "Selecciona uno de nuestros servicios"
                 },
                 "footer": {
-                    "text": "Selecciona una de las opciones para poder ayudarte"
+                    "text": "Selecciona una de las opciones para poder ayudarte con mas información"
                 },
                 "action":{
-                    "button":"Ver Opciones",
+                    "button":"Servicios",
                     "sections":[
                         {
                             "title":"Servicios",#Compra y Venta
@@ -401,7 +401,7 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "🚀 Hola, visita mi pagina https://fondocesantiaepmaps.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información sobre el Fondo de cesantía EPMAPS. ❔\n2️⃣. Ubicación de la EPMAPS. 📍\n3️⃣. Enviar informacion en PDF. 📄\n4️⃣. Audio explicando. 🎧\n5️⃣. Video de Introductivo. ⏯️\n6️⃣. Hablar con un asesor. 🙋‍♂️\n7️⃣. Horario de Atención. 🕜 \n0️⃣. Regresar al Menú. 🕜"
+                "body": "🚀 Hola, visita mi pagina https://fondocesantiaepmaps.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información sobre el Fondo de cesantía EPMAPS. ❔\n2️⃣. Ubicación de la EPMAPS. 📍\n3️⃣.Hablar con un asesor. 🙋‍♂️\n4️⃣. Horario de Atención. \n5️⃣. Servicios\n0️⃣. Regresar al Menú. 🕜"
             }
         }
 
