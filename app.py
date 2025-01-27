@@ -194,7 +194,7 @@ def enviar_mensajes_whatsapp(texto,number):
                 "body": "Sobre nuestros servicio"
             }
         }
-    elif "7" in texto:
+    elif "4" in texto:
         data = {
             "messaging_product": "whatsapp",
             "recipient_type": "individual",
@@ -350,14 +350,69 @@ def enviar_mensajes_whatsapp(texto,number):
             }
         }
     elif "btnconvenio" in texto:
-        data = {
+        data ={
             "messaging_product": "whatsapp",
-            "recipient_type": "individual",
             "to": number,
-            "type": "text",
-            "text": {
-                "preview_url": False,
-                "body": "Los mejos articulos top en ofertas."
+            "type": "interactive",
+            "interactive":{
+                "type" : "list",
+                "body": {
+                    "text": "Selecciona un convenio"
+                },
+                "footer": {
+                    "text": "Selecciona una de las opciones para poder ayudarte con mas información"
+                },
+                "action":{
+                    "button":"Servicios",
+                    "sections":[
+                        {
+                            "title":"Servicios",#Compra y Venta
+                            "rows":[
+                                {
+                                    "id":"btnchevrolet",
+                                    "title" : "Chevrolet",
+                                    "description": "Descuento de 2.5"+"%"+" en la compra de vehículos nuevos de la marca CHEVROLET. El descuento se aplicará sobre el precio de venta al público incluido IVA, de acuerdo con la lista de precios adjunta a este"
+                                },
+                                {
+                                    "id":"btnbyd",
+                                    "title" : "BYD",
+                                    "description": "Hasta el 10"+"%"+" de descuento en repuestos, accesorios"
+                                },
+                                {
+                                    "id":"btndescuento",
+                                    "title" : "Megavision",
+                                    #"description": "Vende lo que ya no estes usando"
+                                },
+                                {
+                                    "id":"btncredito",
+                                    "title" : "Impacto inmobiliario",
+                                    #"description": "Vende lo que ya no estes usando"
+                                },
+                                {
+                                    "id":"btncredito",
+                                    "title" : "MAT computer",
+                                    #"description": "Vende lo que ya no estes usando"
+                                },
+                                {
+                                    "id":"btncredito",
+                                    "title" : "Skybiz travel",
+                                    #"description": "Vende lo que ya no estes usando"
+                                },
+                                {
+                                    "id":"btncredito",
+                                    "title" : "TopCars",
+                                    #"description": "Vende lo que ya no estes usando"
+                                },
+                                {
+                                    "id":"btncredito",
+                                    "title" : "Tecnologico Superior Cordillera",
+                                    #"description": "Vende lo que ya no estes usando"
+                                }
+                            ]
+                        }                       
+                        
+                    ]
+                }
             }
         }
     elif "btncesantia" in texto:
