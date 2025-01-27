@@ -289,7 +289,7 @@ def enviar_mensajes_whatsapp(texto,number):
                 "body": "Estare a la espera."
             }
         }
-    elif "5" in texto:##lista
+    elif "6" in texto:#lista
         data ={
             "messaging_product": "whatsapp",
             "to": number,
