@@ -339,14 +339,52 @@ def enviar_mensajes_whatsapp(texto,number):
             }
         }
     elif "btncompra" in texto:
-        data = {
+        data ={
             "messaging_product": "whatsapp",
-            "recipient_type": "individual",
             "to": number,
-            "type": "text",
-            "text": {
-                "preview_url": False,
-                "body": "Los mejos articulos top en ofertas."
+            "type": "interactive",
+            "interactive":{
+                "type" : "list",
+                "body": {
+                    "text": "Selecciona Alguna Opción"
+                },
+                "footer": {
+                    "text": "Selecciona una de las opciones para poder ayudarte"
+                },
+                "action":{
+                    "button":"Ver Opciones",
+                    "sections":[
+                        {
+                            "title":"Convenio",
+                            "rows":[
+                                {
+                                    "id":"btnconvenio",
+                                    "title" : "Comprar",
+                                    "description": "Compra los mejores articulos de tecnologia"
+                                },
+                                {
+                                    "id":"btcredito",
+                                    "title" : "Credito",
+                                    "description": "Vende lo que ya no estes usando"
+                                }
+                            ]
+                        },{
+                            "title":"Distribución y Entrega",
+                            "rows":[
+                                {
+                                    "id":"btndireccion",
+                                    "title" : "Local",
+                                    "description": "Puedes visitar nuestro local."
+                                },
+                                {
+                                    "id":"btnentrega",
+                                    "title" : "Entrega",
+                                    "description": "La entrega se realiza todos los dias."
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
         }
     elif "btnvender" in texto:
