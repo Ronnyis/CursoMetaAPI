@@ -344,105 +344,105 @@ def enviar_mensajes_whatsapp(texto,number):
                 }
             }
         }
-    elif "btnconvenio" in texto:
-        data ={
-            "messaging_product": "whatsapp",
-            "to": number,
-            "type": "interactive",
-            "interactive":{
-                "type" : "list",
-                "body": {
-                    "text": "Selecciona un convenio"
-                },
-                "footer": {
-                    "text": "Selecciona una de las opciones para poder ayudarte con mas información"
-                },
-                "action":{
-                    "button":"Ver Opciones",
-                    "sections":[
-                        {
-                            "title":"Servicios",#Compra y Venta
-                            "rows":[
-                                {
-                                    "id":"btnchevrolet",
-                                    "title" : "Chevrolet",
-                                    "description": "Descuento de 2.5"+"%"+" en la compra de vehículos nuevos de la marca CHEVROLET. El descuento se aplicará sobre el precio de venta al público incluido IVA, de acuerdo con la lista de precios adjunta a este"
-                                },
-                                {
-                                    "id":"btnbyd",
-                                    "title" : "BYD",
-                                    "description": "Hasta el 10"+"%"+" de descuento en repuestos, accesorios"
-                                },
-                                {
-                                    "id":"btndescuento",
-                                    "title" : "Megavision",
-                                    #"description": "Vende lo que ya no estes usando"
-                                },
-                                {
-                                    "id":"btncredito",
-                                    "title" : "Impacto inmobiliario",
-                                    #"description": "Vende lo que ya no estes usando"
-                                },
-                                {
-                                    "id":"btncredito",
-                                    "title" : "MAT computer",
-                                    #"description": "Vende lo que ya no estes usando"
-                                },
-                                {
-                                    "id":"btncredito",
-                                    "title" : "Skybiz travel",
-                                    #"description": "Vende lo que ya no estes usando"
-                                },
-                                {
-                                    "id":"btncredito",
-                                    "title" : "TopCars",
-                                    #"description": "Vende lo que ya no estes usando"
-                                },
-                                {
-                                    "id":"btncredito",
-                                    "title" : "Tecnologico Superior Cordillera",
-                                    #"description": "Vende lo que ya no estes usando"
-                                }
-                            ]
-                        }                       
+    # elif "btnconvenio" in texto:
+    #     data ={
+    #         "messaging_product": "whatsapp",
+    #         "to": number,
+    #         "type": "interactive",
+    #         "interactive":{
+    #             "type" : "list",
+    #             "body": {
+    #                 "text": "Selecciona un convenio"
+    #             },
+    #             "footer": {
+    #                 "text": "Selecciona una de las opciones para poder ayudarte con mas información"
+    #             },
+    #             "action":{
+    #                 "button":"Ver Opciones",
+    #                 "sections":[
+    #                     {
+    #                         "title":"Servicios",#Compra y Venta
+    #                         "rows":[
+    #                             {
+    #                                 "id":"btnchevrolet",
+    #                                 "title" : "Chevrolet",
+    #                                 "description": "Descuento de 2.5"+"%"+" en la compra de vehículos nuevos de la marca CHEVROLET. El descuento se aplicará sobre el precio de venta al público incluido IVA, de acuerdo con la lista de precios adjunta a este"
+    #                             },
+    #                             {
+    #                                 "id":"btnbyd",
+    #                                 "title" : "BYD",
+    #                                 "description": "Hasta el 10"+"%"+" de descuento en repuestos, accesorios"
+    #                             },
+    #                             {
+    #                                 "id":"btndescuento",
+    #                                 "title" : "Megavision",
+    #                                 #"description": "Vende lo que ya no estes usando"
+    #                             },
+    #                             {
+    #                                 "id":"btncredito",
+    #                                 "title" : "Impacto inmobiliario",
+    #                                 #"description": "Vende lo que ya no estes usando"
+    #                             },
+    #                             {
+    #                                 "id":"btncredito",
+    #                                 "title" : "MAT computer",
+    #                                 #"description": "Vende lo que ya no estes usando"
+    #                             },
+    #                             {
+    #                                 "id":"btncredito",
+    #                                 "title" : "Skybiz travel",
+    #                                 #"description": "Vende lo que ya no estes usando"
+    #                             },
+    #                             {
+    #                                 "id":"btncredito",
+    #                                 "title" : "TopCars",
+    #                                 #"description": "Vende lo que ya no estes usando"
+    #                             },
+    #                             {
+    #                                 "id":"btncredito",
+    #                                 "title" : "Tecnologico Superior Cordillera",
+    #                                 #"description": "Vende lo que ya no estes usando"
+    #                             }
+    #                         ]
+    #                     }                       
                         
-                    ]
-                }
-            }
-        }
-    elif "btncesantia" in texto:
-        data = {
-            "messaging_product": "whatsapp",
-            "recipient_type": "individual",
-            "to": number,
-            "type": "text",
-            "text": {
-                "preview_url": False,
-                "body": "Excelente elección."
-            }
-        }
-    elif "btndescuento" in texto:
-        data = {
-            "messaging_product": "whatsapp",
-            "recipient_type": "individual",
-            "to": number,
-            "type": "text",
-            "text": {
-                "preview_url": False,
-                "body": "Excelente elección."
-            }
-        }
-    elif "btncredito" in texto:
-        data = {
-            "messaging_product": "whatsapp",
-            "recipient_type": "individual",
-            "to": number,
-            "type": "text",
-            "text": {
-                "preview_url": False,
-                "body": "Excelente elección."
-            }
-        }
+    #                 ]
+    #             }
+    #         }
+    #     }
+    # elif "btncesantia" in texto:
+    #     data = {
+    #         "messaging_product": "whatsapp",
+    #         "recipient_type": "individual",
+    #         "to": number,
+    #         "type": "text",
+    #         "text": {
+    #             "preview_url": False,
+    #             "body": "Excelente elección."
+    #         }
+    #     }
+    # elif "btndescuento" in texto:
+    #     data = {
+    #         "messaging_product": "whatsapp",
+    #         "recipient_type": "individual",
+    #         "to": number,
+    #         "type": "text",
+    #         "text": {
+    #             "preview_url": False,
+    #             "body": "Excelente elección."
+    #         }
+    #     }
+    # elif "btncredito" in texto:
+    #     data = {
+    #         "messaging_product": "whatsapp",
+    #         "recipient_type": "individual",
+    #         "to": number,
+    #         "type": "text",
+    #         "text": {
+    #             "preview_url": False,
+    #             "body": "Excelente elección."
+    #         }
+    #     }
     else:
         data={
             "messaging_product": "whatsapp",
