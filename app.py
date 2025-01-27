@@ -217,78 +217,78 @@ def enviar_mensajes_whatsapp(texto,number):
             }
 
         }
-    elif "boton" in texto:
-        data = {
-            "messaging_product": "whatsapp",
-            "recipient_type": "individual",
-            "to": number,
-            "type": "interactive",
-            "interactive":{
-                "type":"button",
-                "body": {
-                    "text": "¿Confirmas tu registro?"
-                },
-                "footer": {
-                    "text": "Selecciona una de las opciones"
-                },
-                "action": {
-                    "buttons":[
-                        {
-                            "type": "reply",
-                            "reply":{
-                                "id":"btnsi",
-                                "title":"Si"
-                            }
-                        },{
-                            "type": "reply",
-                            "reply":{
-                                "id":"btnno",
-                                "title":"No"
-                            }
-                        },{
-                            "type": "reply",
-                            "reply":{
-                                "id":"btntalvez",
-                                "title":"Tal Vez"
-                            }
-                        }
-                    ]
-                }
-            }
-        }
-    elif "btnsi" in texto:
-        data = {
-            "messaging_product": "whatsapp",
-            "recipient_type": "individual",
-            "to": number,
-            "type": "text",
-            "text": {
-                "preview_url": False,
-                "body": "Muchas Gracias por Aceptar."
-            }
-        }
-    elif "btnno" in texto:
-        data = {
-            "messaging_product": "whatsapp",
-            "recipient_type": "individual",
-            "to": number,
-            "type": "text",
-            "text": {
-                "preview_url": False,
-                "body": "Es una Lastima."
-            }
-        }
-    elif "btntalvez" in texto:
-        data = {
-            "messaging_product": "whatsapp",
-            "recipient_type": "individual",
-            "to": number,
-            "type": "text",
-            "text": {
-                "preview_url": False,
-                "body": "Estare a la espera."
-            }
-        }
+    # elif "boton" in texto:
+    #     data = {
+    #         "messaging_product": "whatsapp",
+    #         "recipient_type": "individual",
+    #         "to": number,
+    #         "type": "interactive",
+    #         "interactive":{
+    #             "type":"button",
+    #             "body": {
+    #                 "text": "¿Confirmas tu registro?"
+    #             },
+    #             "footer": {
+    #                 "text": "Selecciona una de las opciones"
+    #             },
+    #             "action": {
+    #                 "buttons":[
+    #                     {
+    #                         "type": "reply",
+    #                         "reply":{
+    #                             "id":"btnsi",
+    #                             "title":"Si"
+    #                         }
+    #                     },{
+    #                         "type": "reply",
+    #                         "reply":{
+    #                             "id":"btnno",
+    #                             "title":"No"
+    #                         }
+    #                     },{
+    #                         "type": "reply",
+    #                         "reply":{
+    #                             "id":"btntalvez",
+    #                             "title":"Tal Vez"
+    #                         }
+    #                     }
+    #                 ]
+    #             }
+    #         }
+    #     }
+    # elif "btnsi" in texto:
+    #     data = {
+    #         "messaging_product": "whatsapp",
+    #         "recipient_type": "individual",
+    #         "to": number,
+    #         "type": "text",
+    #         "text": {
+    #             "preview_url": False,
+    #             "body": "Muchas Gracias por Aceptar."
+    #         }
+    #     }
+    # elif "btnno" in texto:
+    #     data = {
+    #         "messaging_product": "whatsapp",
+    #         "recipient_type": "individual",
+    #         "to": number,
+    #         "type": "text",
+    #         "text": {
+    #             "preview_url": False,
+    #             "body": "Es una Lastima."
+    #         }
+    #     }
+    # elif "btntalvez" in texto:
+    #     data = {
+    #         "messaging_product": "whatsapp",
+    #         "recipient_type": "individual",
+    #         "to": number,
+    #         "type": "text",
+    #         "text": {
+    #             "preview_url": False,
+    #             "body": "Estare a la espera."
+    #         }
+    #     }
     elif "5" in texto:#lista
         data ={
             "messaging_product": "whatsapp",
