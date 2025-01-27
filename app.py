@@ -289,7 +289,7 @@ def enviar_mensajes_whatsapp(texto,number):
                 "body": "Estare a la espera."
             }
         }
-    elif "6" in texto:#lista
+    elif "5" in texto:#lista
         data ={
             "messaging_product": "whatsapp",
             "to": number,
@@ -303,7 +303,7 @@ def enviar_mensajes_whatsapp(texto,number):
                     "text": "Selecciona una de las opciones para poder ayudarte con mas información"
                 },
                 "action":{
-                    "button":"Servicios",
+                    "button":"Ver Opciones",
                     "sections":[
                         {
                             "title":"Servicios",#Compra y Venta
@@ -363,7 +363,7 @@ def enviar_mensajes_whatsapp(texto,number):
                     "text": "Selecciona una de las opciones para poder ayudarte con mas información"
                 },
                 "action":{
-                    "button":"Servicios",
+                    "button":"Ver Opciones",
                     "sections":[
                         {
                             "title":"Servicios",#Compra y Venta
