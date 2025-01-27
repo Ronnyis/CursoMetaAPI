@@ -121,7 +121,7 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "🚀 Hola, ¿Cómo estás? Bienvenido a a EPMAAPS."
+                "body": "🚀 Hola, ¿Cómo estás? Bienvenido a \nFondo Complementario Previsional Cerrado de Cesantia de los Servidores Publicos de Carrera de la EPMAPS / Fondo EPMAPS."
             }
         }
     elif "1" in texto:
@@ -132,9 +132,13 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "Generamos modelos de negocio innovadores y diseñamos herramientas tecnológicas disruptivas que generen ventajas competitivas en favor de nuestros clientes."
-                "\nEn Pazmiño Játiva Seguros nuestro propósito es ¡Desafiar lo establecido Somos el Puente de Oro en la transformación digital de nuestros clientes."
-                "\nAprovechamos la sinergia que conforma nuestro grupo y socios estratégicos, combinando recursos, conocimientos y experiencia para un servicio innovador y personalizado."
+                "body": "En el Año 1993 por iniciativa de una funcionaria, un grupo de supervisores de la Empresa Municipal de Alcantarillado y Agua Potable (EMAAP)" 
+                "deciden formar un Fondo, en el que el ahorro mensual se convierta en un respaldo económico para su cesantía, la que se constituyó como Asociación de Profesionales."
+                "En el año 2004, el Fondo pasa al control de la Superintendencia de Bancos mediante Resolución No. SBS-2004-740 del 16 de septiembre del 2004."
+                "Nuestra Razón de existir:"
+                "Fomentar el ahorro a largo plazo con los mejores beneficios en pro del bienestar familiar y una cesantía segura."
+                "Dónde queremos llegar:"
+                "Ser la principal opción financiera con enfoque social para los partícipes, reconocidos por nuestra solidez operativa y económica, manteniendo un crecimiento sostenible en el tiempo."
             }
         }
     elif "2" in texto:
@@ -143,10 +147,10 @@ def enviar_mensajes_whatsapp(texto,number):
             "to": number,
             "type": "location",
             "location": {
-                "latitude": "-0.17078498559904817",
-                "longitude": "-78.50070310859603",
-                "name": "Broker Pazmiño Seguros",
-                "address": "Torre Tungurahua, Urbanización Colinas del Pichincha, Quito 170527"
+                "latitude": "-0.18956183952662675",
+                "longitude": "-78.49060506769608",
+                "name": "Fondo Complementario Previsional Cerrado de Cesantia de los Servidores Publicos de Carrera de la EPMAPS / Fondo EPMAPS",
+                "address": "ITALIA N31-40 VANCOUVER EDIFICIO ARTES MEDICAS 4to piso Oficina b"
             }
         }
     elif "3" in texto:
@@ -179,7 +183,7 @@ def enviar_mensajes_whatsapp(texto,number):
                 "body": "Introduccion al curso! https://pazminojativa.com/wp-content/uploads/2023/09/video.mp4"
             }
         }
-    elif "6" in texto:
+    elif "lista" in texto:#6
         data = {
             "messaging_product": "whatsapp",
             "recipient_type": "individual",
@@ -187,7 +191,7 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "🤝 En breve me pondre en contacto contigo. 🤓"
+                "body": "Sobre nuestros servicio"
             }
         }
     elif "7" in texto:
@@ -198,19 +202,20 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "📅 Horario de Atención : Lunes a Viernes. \n🕜 Horario : 9:00 am a 5:00 pm 🤓"
+                "body": "📅 Horario de Atención : Lunes a Viernes. \n🕜 Horario : 8:30 am a 5:00 pm"
             }
         }
     elif "0" in texto:
-        data = {
+        data={
             "messaging_product": "whatsapp",
             "recipient_type": "individual",
             "to": number,
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "🚀 Hola, visita mi web https://pazminojativa.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información del Curso. ❔\n2️⃣. Ubicación del local. 📍\n3️⃣. Enviar temario en PDF. 📄\n4️⃣. Audio explicando curso. 🎧\n5️⃣. Video de Introducción. ⏯️\n6️⃣. Hablar con AnderCode. 🙋‍♂️\n7️⃣. Horario de Atención. 🕜 \n0️⃣. Regresar al Menú. 🕜"
+                "body": "🚀 Hola, visita mi pagina https://fondocesantiaepmaps.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información sobre el Fondo de cesantía EPMAPS. ❔\n2️⃣. Ubicación de la EPMAPS. 📍\n3️⃣. Enviar informacion en PDF. 📄\n4️⃣. Audio explicando. 🎧\n5️⃣. Video de Introductivo. ⏯️\n6️⃣. Hablar con un asesor. 🙋‍♂️\n7️⃣. Horario de Atención. 🕜 \n0️⃣. Regresar al Menú. 🕜"
             }
+
         }
     elif "boton" in texto:
         data = {
@@ -284,7 +289,7 @@ def enviar_mensajes_whatsapp(texto,number):
                 "body": "Estare a la espera."
             }
         }
-    elif "lista" in texto:
+    elif "6" in texto:##lista
         data ={
             "messaging_product": "whatsapp",
             "to": number,
@@ -301,39 +306,50 @@ def enviar_mensajes_whatsapp(texto,number):
                     "button":"Ver Opciones",
                     "sections":[
                         {
-                            "title":"Compra y Venta",
+                            "title":"Servicios",#Compra y Venta
                             "rows":[
                                 {
-                                    "id":"btncompra",
-                                    "title" : "Comprar",
+                                    "id":"btnconvenio",
+                                    "title" : "Convenio",
                                     "description": "Compra los mejores articulos de tecnologia"
                                 },
                                 {
-                                    "id":"btnvender",
-                                    "title" : "Vender",
+                                    "id":"btncesantia",
+                                    "title" : "Cesantía",
+                                    "description": "Vende lo que ya no estes usando"
+                                },
+                                {
+                                    "id":"btndescuento",
+                                    "title" : "Descuento",
+                                    "description": "Vende lo que ya no estes usando"
+                                },
+                                {
+                                    "id":"btncredito",
+                                    "title" : "Crédito",
                                     "description": "Vende lo que ya no estes usando"
                                 }
                             ]
-                        },{
-                            "title":"Distribución y Entrega",
-                            "rows":[
-                                {
-                                    "id":"btndireccion",
-                                    "title" : "Local",
-                                    "description": "Puedes visitar nuestro local."
-                                },
-                                {
-                                    "id":"btnentrega",
-                                    "title" : "Entrega",
-                                    "description": "La entrega se realiza todos los dias."
-                                }
-                            ]
                         }
+                        # ,{
+                        #     "title":"Distribución y Entrega",
+                        #     "rows":[
+                        #         {
+                        #             "id":"btndireccion",
+                        #             "title" : "Local",
+                        #             "description": "Puedes visitar nuestro local."
+                        #         },
+                        #         {
+                        #             "id":"btnentrega",
+                        #             "title" : "Entrega",
+                        #             "description": "La entrega se realiza todos los dias."
+                        #         }
+                        #     ]
+                        # }
                     ]
                 }
             }
         }
-    elif "btncompra" in texto:
+    elif "btnconvenio" in texto:
         data = {
             "messaging_product": "whatsapp",
             "recipient_type": "individual",
@@ -344,7 +360,29 @@ def enviar_mensajes_whatsapp(texto,number):
                 "body": "Los mejos articulos top en ofertas."
             }
         }
-    elif "btnvender" in texto:
+    elif "btncesantia" in texto:
+        data = {
+            "messaging_product": "whatsapp",
+            "recipient_type": "individual",
+            "to": number,
+            "type": "text",
+            "text": {
+                "preview_url": False,
+                "body": "Excelente elección."
+            }
+        }
+    elif "btndescuento" in texto:
+        data = {
+            "messaging_product": "whatsapp",
+            "recipient_type": "individual",
+            "to": number,
+            "type": "text",
+            "text": {
+                "preview_url": False,
+                "body": "Excelente elección."
+            }
+        }
+    elif "btncredito" in texto:
         data = {
             "messaging_product": "whatsapp",
             "recipient_type": "individual",
@@ -363,7 +401,7 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "🚀 Hola, visita mi https://pazminojativa.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información sobre la compañia. ❔\n2️⃣. Ubicación de la empresa. 📍\n3️⃣. Enviar informacion en PDF. 📄\n4️⃣. Audio explicando. 🎧\n5️⃣. Video de Introductivo. ⏯️\n6️⃣. Hablar con un asesor. 🙋‍♂️\n7️⃣. Horario de Atención. 🕜 \n0️⃣. Regresar al Menú. 🕜"
+                "body": "🚀 Hola, visita mi pagina https://fondocesantiaepmaps.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información sobre el Fondo de cesantía EPMAPS. ❔\n2️⃣. Ubicación de la EPMAPS. 📍\n3️⃣. Enviar informacion en PDF. 📄\n4️⃣. Audio explicando. 🎧\n5️⃣. Video de Introductivo. ⏯️\n6️⃣. Hablar con un asesor. 🙋‍♂️\n7️⃣. Horario de Atención. 🕜 \n0️⃣. Regresar al Menú. 🕜"
             }
         }
 
