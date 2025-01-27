@@ -322,11 +322,6 @@ def enviar_mensajes_whatsapp(texto,number):
                                     "id":"btndescuento",
                                     "title" : "Descuento",
                                     "description": "Vende lo que ya no estes usando"
-                                },
-                                {
-                                    "id":"btncredito",
-                                    "title" : "Crédito",
-                                    "description": "Vende lo que ya no estes usando"
                                 }
                             ]
                         }
@@ -456,7 +451,7 @@ def enviar_mensajes_whatsapp(texto,number):
             "type": "text",
             "text": {
                 "preview_url": False,
-                "body": "🚀 Hola, visita mi pagina https://fondocesantiaepmaps.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información sobre el Fondo de cesantía EPMAPS. ❔\n2️⃣. Ubicación de la EPMAPS. 📍\n3️⃣.Hablar con un asesor. 🙋‍♂️\n4️⃣. Horario de Atención. \n5️⃣. Servicios\n0️⃣. Regresar al Menú. 🕜"
+                "body": "🚀 Hola, visita mi pagina https://fondocesantiaepmaps.com/ para más información.\n \n📌Por favor, ingresa un número #️⃣ para recibir información.\n \n1️⃣. Información sobre el Fondo de cesantía EPMAPS. ❔\n2️⃣. Ubicación de la EPMAPS. 📍\n3️⃣.Hablar con un asesor. 🙋‍♂️\n4️⃣. Horario de Atención. \n5️⃣. Servicios. \n0️⃣. Regresar al Menú. 🕜"
             }
         }
 
