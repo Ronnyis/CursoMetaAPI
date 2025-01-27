@@ -289,7 +289,7 @@ def enviar_mensajes_whatsapp(texto,number):
     #             "body": "Estare a la espera."
     #         }
     #     }
-    elif "5" in texto:#lista
+    elif "lista" in texto:
         data ={
             "messaging_product": "whatsapp",
             "to": number,
@@ -297,49 +297,43 @@ def enviar_mensajes_whatsapp(texto,number):
             "interactive":{
                 "type" : "list",
                 "body": {
-                    "text": "Selecciona uno de nuestros servicios"
+                    "text": "Selecciona Alguna Opción"
                 },
                 "footer": {
-                    "text": "Selecciona una de las opciones para poder ayudarte con mas información"
+                    "text": "Selecciona una de las opciones para poder ayudarte"
                 },
                 "action":{
                     "button":"Ver Opciones",
                     "sections":[
                         {
-                            "title":"Servicios",#Compra y Venta
+                            "title":"Compra y Venta",
                             "rows":[
                                 {
-                                    "id":"btnconvenio",
-                                    "title" : "Convenio",
+                                    "id":"btncompra",
+                                    "title" : "Comprar",
                                     "description": "Compra los mejores articulos de tecnologia"
                                 },
                                 {
-                                    "id":"btncesantia",
-                                    "title" : "Cesantía",
-                                    "description": "Vende lo que ya no estes usando"
-                                },
-                                {
-                                    "id":"btndescuento",
-                                    "title" : "Descuento",
+                                    "id":"btnvender",
+                                    "title" : "Vender",
                                     "description": "Vende lo que ya no estes usando"
                                 }
                             ]
+                        },{
+                            "title":"Distribución y Entrega",
+                            "rows":[
+                                {
+                                    "id":"btndireccion",
+                                    "title" : "Local",
+                                    "description": "Puedes visitar nuestro local."
+                                },
+                                {
+                                    "id":"btnentrega",
+                                    "title" : "Entrega",
+                                    "description": "La entrega se realiza todos los dias."
+                                }
+                            ]
                         }
-                        # ,{
-                        #     "title":"Distribución y Entrega",
-                        #     "rows":[
-                        #         {
-                        #             "id":"btndireccion",
-                        #             "title" : "Local",
-                        #             "description": "Puedes visitar nuestro local."
-                        #         },
-                        #         {
-                        #             "id":"btnentrega",
-                        #             "title" : "Entrega",
-                        #             "description": "La entrega se realiza todos los dias."
-                        #         }
-                        #     ]
-                        # }
                     ]
                 }
             }
